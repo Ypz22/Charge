@@ -61,7 +61,8 @@ def commonHashBreaker(hash_value, hash_type, dictionary_path):
                 print(f"Contraseña encontrada: {password}")
                 end_time = time.perf_counter()
                 print(f"Tiempo de ejecución: {end_time - start_time} segundos")
-                sys.exit(0)
+                return password
+    return None
 
 def process_chunk(hash_value, hash_type, chunk):
     for password in chunk:

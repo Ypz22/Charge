@@ -15,6 +15,7 @@ def get_data():
 
 @app.route('/', methods=['GET'])
 def home():
+    
     return "Hello, this is a simple Python server!"
 
 if __name__ == '__main__':
